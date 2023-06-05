@@ -2,6 +2,8 @@
 
 html {
   scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -31,8 +33,39 @@ nav.navbar {
 }
 
 .sidebar-menu {
-  width: 226px;
+  width: 250px;
   height: 100vh;
   background-color: #101010;
   position: fixed;
+}
+
+.sidebar-menu-item-active {
+  color: #fad810;
+  background-color: #161616;
+  border-radius: 20px;
+}
+
+.sidebar-menu-item {
+  margin-bottom: 10px;
+}
+
+.sidebar-menu-item:hover {
+  background-color: #161616;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.card:hover {
+  background-color: #161616 !important;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.cut-text {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 160px;
+  height: 1.2em;
+  white-space: nowrap;
 }
